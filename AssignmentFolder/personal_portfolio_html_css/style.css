@@ -1,0 +1,324 @@
+/* global css */
+body {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section_page{
+  margin: 100px 0px;
+}
+.section_title{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.section_title_child{
+  background-color: #15AD6D;
+  padding: 7px;
+  border-radius: 10px;
+}
+.section_title_sub_title{
+  color: rgb(210, 236, 223);;
+}
+.section_page_secondary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section_page_secondary_left, .section_page_secondary_right{
+  flex: 1;
+}
+/*  global css end*/
+
+/* home background */
+
+/* header section start */
+.my_home {
+  padding: 200px;
+  text-align: center;
+}
+
+section.bg {
+  width: 100%;
+  min-height: 300px;
+}
+
+.pattern {
+  position: relative;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg,
+          #3bb78f 0%, #0bab64 74%);
+}
+
+.pattern:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my_home{
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse ;
+  gap: 4;
+}
+
+.home_title{
+  font-family: 'Caprasimo', cursive;
+font-size:60px;
+text-align: center;
+
+}
+.code_icon{
+  font-size:40px;
+}
+/* nav start */
+.navbar{
+  margin: 20px 0px;
+}
+nav{
+  background-color: #15AD6D;
+  padding:5px 0px;
+  max-width:500px;
+  margin: 0 auto;
+  border-radius:40px;
+}
+
+ul{
+  list-style-type:none;
+}
+ul{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+ul>li>a{
+  color: rgb(210, 236, 223);
+  text-decoration: none;
+  font-size: 20px;
+}
+ul>li>:active{
+  color: rgb(217, 209, 91);
+}
+/* nav end*/
+
+/* header section end */
+
+/* about section start */
+/* about */
+
+/* about left */
+.about_title{
+font-size: 30px;
+font-family: 'Caprasimo', cursive;
+}
+.icon_about{
+  font-size:30px;
+  color: #0bab64;
+}
+.about_para{
+  line-height: 25px;
+}
+/* about right */
+
+.about_right img{
+  width: 100%;
+}
+/* about section end */
+
+/* project section start */
+.project_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:30px;
+}
+.project_list div{
+display: flex;
+justify-content: center;
+align-items: center;
+width:250px;
+max-width: 250px;
+height: 250px;
+ margin: 0 auto;
+ cursor: pointer;
+ position: relative;
+ display: flex;
+ padding: 10px;
+ background-color: rgba(237, 234, 234, 0.9);
+ border-radius: 10px;
+}
+ 
+.project_list div::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #0bab63a9;
+  border-radius: 10px;
+
+  transition: height 0.3s;
+}
+
+.project_list div:hover::before {
+  height: 100%;
+  transition: height 0.3s;
+}
+
+/* project section end */
+
+/* contact left start */
+.contact_left h2{
+  width: 350px;
+  max-width:350px;
+  font-size: 60px;
+  font-family: 'Caprasimo', cursive;
+}
+
+
+/* contact_right start */
+.contact_right form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact_right form>input{
+  width: 100%;
+  padding: 9px 15px;
+  height: 20px;
+  border-radius: 10px;
+
+}
+textarea{
+  width: 100%;
+  padding: 9px 15px;
+  border-radius: 10px;
+}
+button{
+  width: 100px;
+  padding: 10px 15px;
+  margin:10px;
+  font-size: large;
+  font-weight: bold;
+  border-radius :10px;
+  background-color: #0bab63a9;
+  cursor: pointer;
+   box-shadow: none;
+   border: none;
+}
+ 
+/* contact_right end */
+
+/* responsive */
+
+/* Styles for screens smaller than or equal to 767px */
+@media (min-width: 510px) and (max-width:767px){
+  .home_title{
+    font-size: 14px;
+    }
+    .my_home{
+      max-width: 400px;
+      min-width: none;
+     }
+
+     .contact_right form>input {
+      
+      padding: 9px 15px;
+      height: 20px;
+      border-radius: 10px;
+  }
+  .contact_left h2 {
+    width: 350px;
+    max-width: 350px;
+    font-size:14px;
+    font-family: 'Caprasimo', cursive;
+}
+    
+}
+@media (max-width: 767px) {
+  /* CSS rules specific to small screens */
+  .section_page_secondary{
+    flex-direction: column;
+  }
+  .my_home{
+    padding: 10px;
+    font-size: 20px;
+   }
+   .home_title{
+   font-size: 20px;
+   }
+   .pattern:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: none;
+}
+main{
+  padding: 0 10px;
+}
+  /* Example rule */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1000px) {
+  /* CSS rules specific to medium screens */
+  .section_page_secondary{
+    flex-direction: column;
+  }
+  .my_home{
+    padding: 20px;
+    font-size: 20px;
+   }
+   .home_title{
+   font-size: 20px;
+   }
+   .pattern:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: none;
+}
+main{
+  padding: 0 10px;
+}
+
+.about_page{
+  flex-direction: column-reverse;
+  text-align: center;
+}
+ 
+}
+
+/* Styles for screens larger than or equal to 1024px */
+@media (min-width: 1024px) {
+  /* CSS rules specific to large screens */
+  
+  /* Example rule */
+  body {
+    font-size: 18px;
+  }
+}
+
+
+/* assignment compleated */

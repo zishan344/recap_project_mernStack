@@ -1,0 +1,15 @@
+.dragger_box{
+  width: 500px;
+  height: 500px;
+  border: 1px solid aqua;
+}
+img{
+  width: 100%;
+}
+.dragger_section{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  
+}
+ 

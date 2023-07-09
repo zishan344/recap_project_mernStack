@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drag and drop</title>
+  <link rel="stylesheet" href="../css/drag.css">
+</head>
+<body>
+  <h1 style="text-align: center;">start drag and drop file</h1>
+
+  <section class="dragger_section">
+<div id ="div1" class="dragger_box"ondragover="allowDrop(event)" ondrop="drop(event)">
+
+
+  </div>
+   <div id ="div1" class="dragger_box"ondragover="allowDrop(event)" ondrop="drop(event)">
+
+  <img   id="drag1" src="../docotr-6.jpg" alt="drag_image" draggable="true" ondragstart="drag(event)">
+
+  </div>
+  </section>
+  
+
+
+<script>
+ 
+  function allowDrop(e) {
+      e.preventDefault();}
+      function drag(e) {
+      e.dataTransfer.setData("text", e.target.id);
+      }
+      // ? drag
+      function drop(e) {
+e.preventDefault();
+let data = e.dataTransfer.getData("text");
+e.target.appendChild(document.getElementById(data));
+      }
+// !this is need be finished
+</script>
+
+</body>
+</html>

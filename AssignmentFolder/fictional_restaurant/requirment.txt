@@ -1,0 +1,19 @@
+Certainly! Here are two project assignments that utilize Bootstrap and Tailwind CSS respectively:
+
+Project Assignment 1: Bootstrap Website
+
+Create a responsive website for a fictional restaurant using Bootstrap. The website should have the following features:
+
+1. Navigation bar: A fixed navigation bar at the top with links to different sections of the website.
+
+2. Hero section: A visually appealing hero section with a background image, restaurant name, and a call-to-action button.
+
+3. Menu section: Display the restaurant's menu items with their descriptions and prices. Use Bootstrap cards or grids for the layout.
+
+4. About section: Provide information about the restaurant, its history, and the team behind it. Use appropriate Bootstrap components to showcase the content.
+
+5. Contact section: Include a contact form for customers to submit inquiries or reservations. Use Bootstrap form components for input fields and buttons.
+
+6. Footer: Add a footer with relevant links, social media icons, and copyright information.
+
+Your task is to utilize Bootstrap's grid system, components, and responsive utilities to create a visually appealing and user-friendly website for the restaurant.
