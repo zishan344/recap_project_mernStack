@@ -1,0 +1,20 @@
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:wght@400;700;900&display=swap');
+/* font-family: 'Caprasimo', cursive;
+font-family: 'Roboto', sans-serif; */
+  
+
+.bg_header{
+  background-image: url('https://preview.colorlib.com/theme/pulse/img/slider/slider-2.jpg.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.hero_banner{
+ height: calc(100vh - 95px)
+}
+
+.hero_banner h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
