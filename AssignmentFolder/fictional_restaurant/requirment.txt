@@ -10,7 +10,7 @@ Create a responsive website for a fictional restaurant using Bootstrap. The webs
 
 3. Menu section: Display the restaurant's menu items with their descriptions and prices. Use Bootstrap cards or grids for the layout.
 
-4. About section: Provide information about the restaurant, its history, and the team behind it. Use appropriate Bootstrap components to showcase the content.
+4. About section: Provide information about the restaurant, its history, and the team behind it. Use   Bootstrap components to showcase the content.
 
 5. Contact section: Include a contact form for customers to submit inquiries or reservations. Use Bootstrap form components for input fields and buttons.
 
