@@ -27,10 +27,19 @@ font-family: 'Roboto', sans-serif; */
   color: black !important;
 }
 .about_image {
-  height: 300px;
+  width: 100%;
+  border-radius: 40px;
 }
 .at {
   height: auto;
   width: auto;
   border-radius: 45%;
+}
+@media only screen and (max-width: 800px) {
+  .hero_title {
+    flex-direction: column;
+  }
+  .image_height {
+    height: 100% !important;
+  }
 }
