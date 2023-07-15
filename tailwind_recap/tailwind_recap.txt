@@ -1,0 +1,27 @@
+Tailwind CSS Recap:
+
+1. Introduction to Tailwind CSS:
+   - Understanding the philosophy and approach of Tailwind CSS.
+   - Overview of utility-first CSS and the benefits it offers.
+
+2. Tailwind CSS Configuration:
+   - Setting up and configuring Tailwind CSS in your project.
+   - Customizing the default configuration to match your design preferences.
+
+3. Using Tailwind CSS Classes:
+   - Applying utility classes to HTML elements for quick styling.
+   - Utilizing responsive utility classes for responsive design.
+
+4. Tailwind CSS Components:
+   - Building components using utility classes and composition techniques.
+   - Creating reusable and flexible components using Tailwind CSS features.
+
+5. Tailwind CSS Plugins:
+   - Extending Tailwind CSS functionality with plugins.
+   - Installing and integrating community-developed plugins into your project.
+
+6. Tailwind CSS JIT (Just-in-Time) Mode:
+   - Understanding the JIT mode and its benefits for faster development.
+   - Configuring and enabling JIT mode in your Tailwind CSS project.
+
+Both Bootstrap and Tailwind CSS can significantly speed up the development process by providing pre-built styles and components. It's essential to practice using these frameworks by building projects and exploring their documentation for more in-depth understanding and proficiency.
