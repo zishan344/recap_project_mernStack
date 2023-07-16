@@ -1,5 +1,14 @@
 {
   "editor.linkedEditing": true,
   "editor.wordWrap": "on",
-  "chat.editor.wordWrap": "on"
+  "chat.editor.wordWrap": "on",
+  "cSpell.words": [
+    "darkmode",
+    "Dribbble",
+    "flowbit",
+    "Flowbite",
+    "rangepicker",
+    "swiper",
+    "Tripwise"
+  ]
 }
