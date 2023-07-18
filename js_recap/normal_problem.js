@@ -14,12 +14,12 @@ function market(money) {
 // problem 2
 
 function avarageNumberWithTwoDecimals(a, b, c, d, e) {
-  const avarageSubjectNumber = (a + b + c + d + e) / 2;
+  const avarageSubjectNumber = (a + b + c + d + e) / 5;
   const decimal = avarageSubjectNumber.toFixed(2);
   return parseFloat(decimal);
   // solved
 }
-// console.log(avarageNumberWithTwoDecimals(75.25544, 65, 80.525, 35.45, 99.5));
+// console.log(avarageNumberWithTwoDecimals(75.25, 65, 80, 35.45, 99.5));
 
 // problem 3
 function concat(a, b) {
@@ -83,10 +83,22 @@ grading condition
     // sub problem 2
     // 1 take 3 number and finding one largest number
     function largestNumberFinder(a, b, c) {
-      const largerNumber = Math.max(a, b, c);
-      return largerNumber;
+      // const largerNumber = Math.max(a, b, c);
+      if (a > b) {
+        if (a > c) {
+          return a;
+        } else {
+          return c;
+        }
+      } else {
+        if (b > c) {
+          return b;
+        } else {
+          return c;
+        }
+      }
     }
-    // console.log(largestNumberFinder(5, 40, 15)); solved by larger number
+    console.log(largestNumberFinder(300, 400, 75)); //solved by larger number
 
     // sub 2 matching triangle slide
     function solveTriangleSlide(a, b, c) {
@@ -96,6 +108,6 @@ grading condition
         return "not equal";
       }
     }
-    // console.log(solveTriangleSlide(9, 8, 1)); solved
+    // console.log(solveTriangleSlide(9, 8, 1)); solved triangle
   }
 }
