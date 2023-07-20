@@ -39,4 +39,4 @@ function factorial(number) {
   }
   return result;
 }
-console.log(factorial(7));
+// console.log(factorial(7));

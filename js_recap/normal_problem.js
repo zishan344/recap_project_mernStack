@@ -98,7 +98,7 @@ grading condition
         }
       }
     }
-    console.log(largestNumberFinder(300, 400, 75)); //solved by larger number
+    // console.log(largestNumberFinder(300, 400, 75)); //solved by larger number
 
     // sub 2 matching triangle slide
     function solveTriangleSlide(a, b, c) {
@@ -111,3 +111,96 @@ grading condition
     // console.log(solveTriangleSlide(9, 8, 1)); solved triangle
   }
 }
+
+{
+  // find tallest number and lowest number of array elements,
+  const array = [20, 80, 70, 50, 30, 90, 80, 5, 400];
+  function tallestNumber(number) {
+    let result = 0;
+    for (let i = 0; i < number.length; i++) {
+      if (result < number[i]) {
+        result = number[i];
+      }
+    }
+    // console.log(result);
+  }
+  // tallestNumber(tallestArray);
+  // find smaller number and lowest number of array elements
+  function smallerNumber(number) {
+    let result = 0;
+    for (let i = 0; i < number.length; i++) {
+      // console.log(i);
+      if (result === 0) {
+        result = number[i];
+      } else if (number[i] < result) {
+        result = number[i];
+      }
+    }
+    console.log(result);
+  }
+
+  // smallerNumber(array);
+
+  /* reverse string
+   */
+  function reverseString(str) {
+    const reverseStrArr = str.split("");
+    const fullStrArr = [];
+    for (let i = reverseStrArr.length - 1; i >= 0; i--) {
+      const value = reverseStrArr[i];
+      fullStrArr.push(value);
+    }
+    return fullStrArr.join(" ");
+  }
+  function reverseWord(str) {
+    const reverseStrArr = str.split(" ");
+    const fullStrArr = [];
+    for (let i = reverseStrArr.length - 1; i >= 0; i--) {
+      const value = reverseStrArr[i];
+      fullStrArr.push(value);
+    }
+    return fullStrArr.join(" ");
+  }
+  const string = "I am a string";
+  // console.log(reverseString(string));
+  // console.log(reverseWord(string));
+
+  // Fibonacci
+  function fibNumber(n) {
+    const fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+      fib[i] = fib[i - 2] + fib[i - 1];
+    }
+    console.log(fib);
+  }
+}
+// fibNumber(15);
+// duplicate chacker
+const arr = [1, 2, 56, 30, 60, 2, 8, 1, 5, 3, 1];
+function duplicateChacker(number) {
+  const pure = [];
+  for (let i = 0; i < number.length; i++) {
+    if (!pure.includes(number[i])) {
+      pure.push(number[i]);
+    }
+  }
+
+  console.log(pure);
+}
+
+// duplicateChacker(arr);
+
+//  foo bar
+
+function fooBar(num) {
+  if (num % 3 == 0 && num % 5 == 0) {
+    return "foobar";
+  } else if (num % 3 == 0) {
+    return "foo";
+  } else if (num % 5 == 0) {
+    return "bar";
+  } else {
+    return "can't manage this number";
+  }
+}
+// console.log(fooBar(12));
